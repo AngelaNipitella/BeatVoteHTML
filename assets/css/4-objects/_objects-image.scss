@@ -1,0 +1,9 @@
+.o-image {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    &--auto {
+        width: auto;
+    }
+}

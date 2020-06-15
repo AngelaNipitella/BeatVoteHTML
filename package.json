@@ -1,0 +1,45 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "deploy": "docker run -it -v $(pwd):/home/app nombre-instancia-node-del-proyecto node_modules/.bin/gulp deploy -rm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aciliainternet/NOMBRE_REPO"
+  },
+  "author": "Acilia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aciliainternet/NOMBRE_REPO/issues"
+  },
+  "homepage": "https://github.com/aciliainternet/NOMBRE_REPO#readme",
+  "dependencies": {
+    "@babel/compat-data": "^7.8.0",
+    "tiny-slider": "^2.9.2"
+  },
+  "devDependencies": {
+    "@babel/core": "7.8.3",
+    "@babel/plugin-syntax-dynamic-import": "7.8.3",
+    "@babel/plugin-transform-modules-amd": "7.8.3",
+    "@babel/plugin-transform-runtime": "7.8.3",
+    "@babel/preset-env": "7.5.5",
+    "@babel/runtime": "7.8.3",
+    "babel-loader": "8.0.6",
+    "babel-minify-webpack-plugin": "0.3.1",
+    "dotenv-webpack": "1.7.0",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb-base": "14.0.0",
+    "eslint-plugin-import": "2.20.0",
+    "gulp": "4.0.2",
+    "gulp-autoprefixer": "7.0.1",
+    "gulp-cli": "2.2.0",
+    "gulp-rev": "9.0.0",
+    "gulp-sass": "4.0.2",
+    "gulp-sass-glob": "1.1.0",
+    "webpack-stream": "5.2.1"
+  }
+}

@@ -1,0 +1,9 @@
+###> Frontend assets
+/node_modules/
+/assets/build/
+/public/
+###< Frontend assets
+
+###> Frontend dependencies lock
+package-lock.json
+###< Frontend dependencies lock
