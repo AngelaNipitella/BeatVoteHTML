@@ -1,14 +1,8 @@
-$bp__sm: 768px; //$screen-sm-min; // 768px
-$bp__md: 1024px; //$screen-md-min; // 1024px
-$bp__lg: 1280px; //$screen-lg; // 1280px
-$bp__xl: 1440px; //$screen-lg; // 1440px
+$bp__sm: 1366px; //$screen-sm-min; // 1366px
 
 $breakpoints: (
     'sm': $bp__sm,
-    'md': $bp__md,
-    'lg': $bp__lg,
-    'xl': $bp__xl
-    );
+);
 
 $breakpoints-count: length($breakpoints);
 
@@ -29,41 +23,4 @@ $breakpoints-count: length($breakpoints);
     @else if $media == sm--max {
         @media (max-width: ($bp__sm - 1)) { @content }
     }
-
-    @else if $media == sm--in {
-        @media (min-width: $bp__sm) and (max-width: ($bp__md - 1)) { @content }
-    }
-
-    @else if $media == md {
-        @media (min-width: $bp__md) { @content }
-    }
-
-    @else if $media == md--max {
-        @media (max-width: ($bp__md - 1)) { @content }
-    }
-
-    @else if $media == md--in {
-        @media (min-width: $bp__md) and (max-width: ($bp__lg - 1)) { @content }
-    }
-
-    @else if $media == lg {
-        @media (min-width: $bp__lg) { @content }
-    }
-
-    @else if $media == lg--max {
-        @media (max-width: $bp__lg - 1) { @content }
-    }
-
-    @else if $media == xl {
-        @media (min-width: $bp__xl) { @content }
-    }
-
-    @else if $media == xl--max {
-        @media (max-width: $bp__xl - 1) { @content }
-    }
-
-    @else {
-        @media (min-width: $media) { @content }
-    }
-
 }

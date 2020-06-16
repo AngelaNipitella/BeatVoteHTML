@@ -1,0 +1,16 @@
+.c-btn {
+    padding: 12px 65px;
+    background-image: linear-gradient($color-bgc-btn, $color-bgc-btn-secondary);
+    border-radius: 3px;
+    color: $color-white;
+    box-shadow: inset 0px 2px 12px -10px $color-white;
+    font-size: rem(18);
+    font-family: $font-family-base;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    @include media-breakpoint(sm) {
+        padding: 16px 29px;
+        font-size: rem(16);
+    }
+}
