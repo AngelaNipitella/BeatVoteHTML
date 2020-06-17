@@ -6,11 +6,16 @@
     box-shadow: inset 0px 2px 12px -10px $color-white;
     font-size: rem(18);
     font-family: $font-family-base;
-    font-weight: 800;
+    font-weight: 700;
     text-transform: uppercase;
 
     @include media-breakpoint(sm) {
         padding: 16px 29px;
         font-size: rem(16);
+    }
+
+    &--display {
+        display: block;
+        margin: 0 auto;
     }
 }
