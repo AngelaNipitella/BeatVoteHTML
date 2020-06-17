@@ -1,0 +1,101 @@
+.c-hero {
+    width: 90%;
+    margin: 90px auto 0;
+    text-align: center;
+
+    @include media-breakpoint(sm) {
+        width: 60%;
+        margin: 150px auto 0;
+    }
+
+    &__bgc-oval {
+        @include position(absolute, $top: 0, $left: 0);
+        z-index: -2;
+        width: 140%;
+        height: 470px;
+        background-image: linear-gradient(#FFF2BE, #FFFBF3);
+        border-bottom-left-radius: 30%;
+        border-bottom-right-radius: 30%;
+        transform: translateX(-13%);
+
+        @include media-breakpoint(sm) {
+            width: 150%;
+            height: 770px;
+            border-bottom-left-radius: 40%;
+            border-bottom-right-radius: 40%;
+            margin: 0 auto;
+            transform: translateX(-15%);
+        }
+    }
+
+    &__circle-small {
+        @include position(absolute, $top: 120px, $left: -55px);
+        z-index: -1;
+        width: 130px;
+        height: 130px;
+        background-image: linear-gradient(to bottom left, #FFFBF3, #FFF2BE); 
+        border-radius: 50%;
+
+        @include media-breakpoint(sm) {
+            @include position(absolute, $top: 250px, $left: 130px);
+            width: 350px;
+            height: 350px;
+        }
+    }
+
+    &__circle-medium {
+        @include position(absolute, $top: -45px, $right: -130px);
+        z-index: -1;
+        width: 340px;
+        height: 340px;
+        background-image: linear-gradient(to bottom left, #FFF2BE, #FFFBF3);
+        border-radius: 50%;
+
+        @include media-breakpoint(sm) {
+            @include position(absolute, $top: -95px, $right: 216px);
+            width: 500px;
+            height: 500px;
+        }
+    }
+
+    &__wrapper {
+        width: 100%;
+        margin: 0 auto;
+
+        @include media-breakpoint(sm) {
+            width: 95%;
+        }
+    }
+
+    &__img {
+        max-width: 328px;
+        margin: 0 auto;
+
+        @include media-breakpoint(sm) {
+            max-width: 720px;
+        }
+    }
+
+    &__title {
+        font-size: rem(27);
+        font-weight: 600;
+        line-height: 36px;
+
+        @include media-breakpoint(sm) {
+            font-size: rem(46);
+            font-weight: 500;
+            line-height: 56px;
+        }
+    }
+
+    &__description {
+        width: 95%;
+        margin: 0 auto;
+        font-size: rem(18);
+        line-height: 26px;
+
+        @include media-breakpoint(sm) {
+            font-size: rem(20);
+        }
+    }
+}
