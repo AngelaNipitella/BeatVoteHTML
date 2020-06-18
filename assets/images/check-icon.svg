@@ -1,19 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
-    <title>Icon Shape</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Mobile---375px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Mobile-1---375px" transform="translate(-224.000000, -928.000000)" fill="#44D7B6" fill-rule="nonzero">
-            <g id="Group-6" transform="translate(136.000000, 916.000000)">
-                <g id="bi-check-circle-fill" transform="translate(88.000000, 12.000000)">
-                    <g id="Icon">
-                        <g id="Icon-Group">
-                            <path d="M16,8 C16,12.418278 12.418278,16 8,16 C3.581722,16 0,12.418278 0,8 C0,3.581722 3.581722,1.77635684e-15 8,1.77635684e-15 C12.418278,1.77635684e-15 16,3.581722 16,8 Z M12.03,4.97 C11.8856712,4.8261749 11.6890369,4.7472622 11.4853232,4.75141192 C11.2816096,4.75556165 11.088352,4.84241658 10.95,4.992 L7.477,9.417 L5.384,7.323 C5.08849025,7.04764114 4.62799028,7.05576612 4.3423782,7.3413782 C4.05676612,7.62699028 4.04864114,8.08749025 4.324,8.383 L6.97,11.03 C7.11402466,11.1737623 7.3102845,11.2528291 7.51374574,11.2490578 C7.71720698,11.2452865 7.9104019,11.1590009 8.049,11.01 L12.041,6.02 C12.3240979,5.72565216 12.3196527,5.2589026 12.031,4.97 L12.03,4.97 Z" id="Icon-Shape"></path>
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
+<svg width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <defs/>
+  <path fill="#44D7B6" fill-rule="nonzero" d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-3.97-3.03a.75.75 0 00-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 00-1.06 1.06L6.97 11.03a.75.75 0 001.079-.02l3.992-4.99a.75.75 0 00-.01-1.05h-.001z"/>
 </svg>
