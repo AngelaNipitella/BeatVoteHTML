@@ -9,7 +9,6 @@
         flex-direction: row;
         width: 90%;
         margin: 0 auto;
-
     }
 
     &__wrapper {
@@ -19,41 +18,39 @@
 
     &__icons {
         margin: 40px auto 0;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        border-radius: 50%;
         width: 100px;
         height: 100px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 3px #DADADA;
     }
-    
+
     &__check {
         position: relative;
         top: -23px;
         right: -66px;
         
-                @include media-breakpoint(md) {
-                    filter: sepia(1)
-                }
+        @include media-breakpoint(md) {
+            filter: sepia(1)
+        }
     }
-
+    
     &__img {
-        position: relative;
-        top: 50%;
-        left: 0;
+        @include position(relative, $top: 50%, $left: 0);
         transform: translate(-16%, -50%);
     }
-
+    
     &__title {
         margin: 24px 0 16px;
         font-size: rem(21);
         font-weight: 600;
         line-height: 28px;
     }
-
+    
     &__description {
         font-size: rem(16);
         font-weight: 500;
         line-height: 24px;
-
+        
         @include media-breakpoint(sm) {
             width: 50%;
             margin: 0 auto;
