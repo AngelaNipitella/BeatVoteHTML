@@ -25,9 +25,7 @@
     }
 
     &__check {
-        position: relative;
-        top: -23px;
-        right: -66px;
+        @include position(relative, $top: -23px, $right: -66px);
         
         @include media-breakpoint(md) {
             filter: sepia(1)
