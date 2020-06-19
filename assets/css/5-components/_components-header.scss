@@ -29,15 +29,15 @@
             background-color: rgba($color: #000a3a, $alpha: .92);
             text-align: center;
         }
+    }
+    
+    .is-active {
+        display: block;
 
-        &--show {
-            display: block;
-
-            @include media-breakpoint(md--max) {
-                display: flex;
-            }
+        @include media-breakpoint(md--max) {
+            display: flex;
         }
-    } 
+    }
 
     &__nav-list {
         display: flex;

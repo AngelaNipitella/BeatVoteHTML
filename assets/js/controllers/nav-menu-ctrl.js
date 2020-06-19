@@ -1,9 +1,9 @@
 function switcher() {
   const searchModal = document.querySelector('nav.c-header__nav');
-  if (!searchModal.classList.contains('c-header__nav--show')) {
-    searchModal.classList.add('c-header__nav--show');
+  if (!searchModal.classList.contains('is-active')) {
+    searchModal.classList.add('is-active');
   } else {
-    searchModal.classList.remove('c-header__nav--show');
+    searchModal.classList.remove('is-active');
   }
 };
 
