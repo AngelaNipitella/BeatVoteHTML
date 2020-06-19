@@ -79,7 +79,7 @@
         }
     }
 
-    .o-svg-close-menu {
+    .o-svg__close {
         @include position(absolute, $top: 20px, $right: 16px);
 
         @include media-breakpoint(md) {
@@ -87,7 +87,7 @@
         }
     }
 
-    .o-svg-burger {
+    .o-svg__burger {
         @include media-breakpoint(md) {
             display: none;
         }
