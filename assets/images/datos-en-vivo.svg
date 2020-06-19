@@ -2,20 +2,20 @@
     <defs/>
     <defs>
         <linearGradient id="a" x1="50%" x2="50%" y1="0%" y2="100%">
-            <stop offset="0%" stop-color="#062FF9"/>
-            <stop offset="100%" stop-color="#0225D0"/>
+            <stop offset="0%" stop-color="#062ff9"/>
+            <stop offset="100%" stop-color="#0225d0"/>
         </linearGradient>
         <linearGradient id="b" x1="50%" x2="50%" y1="0%" y2="100%">
-            <stop offset="0%" stop-color="#062FF9"/>
-            <stop offset="100%" stop-color="#0225D0"/>
+            <stop offset="0%" stop-color="#062ff9"/>
+            <stop offset="100%" stop-color="#0225d0"/>
         </linearGradient>
         <linearGradient id="c" x1="50%" x2="50%" y1="0%" y2="100%">
-            <stop offset="0%" stop-color="#062FF9"/>
-            <stop offset="100%" stop-color="#0225D0"/>
+            <stop offset="0%" stop-color="#062ff9"/>
+            <stop offset="100%" stop-color="#0225d0"/>
         </linearGradient>
         <linearGradient id="d" x1="50%" x2="50%" y1="0%" y2="100%">
-            <stop offset="0%" stop-color="#062FF9"/>
-            <stop offset="100%" stop-color="#0225D0"/>
+            <stop offset="0%" stop-color="#062ff9"/>
+            <stop offset="100%" stop-color="#0225d0"/>
         </linearGradient>
     </defs>
     <g fill="none" fill-rule="nonzero">
