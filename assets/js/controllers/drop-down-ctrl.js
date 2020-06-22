@@ -1,18 +1,21 @@
+import {getParentWithClass} from './utils';
+
 function toggleDisplay(event){
-    const targetArrowParent = event.target.parentNode
-    if (!targetArrowParent.classList.contains('is-active')) {
-        targetArrowParent.classList.add('is-active');
+    const element = getParentWithClass(event.target, 'js-parent-wrapper');
+    if (!element.classList.contains('is-active')) {
+        element.classList.add('is-active');
     }else{
-        targetArrowParent.classList.remove('is-active');
+        element.classList.remove('is-active');
     }
 }
 
 function init() {
-    const dropDownArrow = document.querySelectorAll('.c-features__arrow');
-    if (dropDownArrow ) {
-        dropDownArrow.forEach((el) => {
-        el.addEventListener('click', toggleDisplay);
-    });
+    const dropDownArrow = document.querySelectorAll('.js-dropDown');
+        if (dropDownArrow ) {
+            console.table(dropDownArrow)
+            dropDownArrow.forEach((el) => {
+            el.addEventListener('click', toggleDisplay);
+        });
     }
 }
 

@@ -146,6 +146,11 @@
         margin-top: 20px;
     }
 
+    &__btn {
+        outline: none;
+        background-color: $color-white;
+    }
+
     &__arrow{
         width: 24px;
         margin-top: 40px;
