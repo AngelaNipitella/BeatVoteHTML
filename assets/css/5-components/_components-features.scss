@@ -1,10 +1,10 @@
-.c-functionalities {
+.c-features {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 64px;
 
-    @include media-breakpoint(md) {
+    @include media-breakpoint('md') {
         margin-top: 120px;
     }
 
@@ -17,7 +17,7 @@
         font-size: rem(26);
         line-height: 32px;
 
-        @include media-breakpoint(md) {
+        @include media-breakpoint('md') {
             font-size: rem(36);
             line-height: 42px;
         }
@@ -37,7 +37,7 @@
         justify-content: space-evenly;
         width: 100%;
 
-        @include media-breakpoint(md) {
+        @include media-breakpoint('md') {
             flex-direction: row;
         }
     }
@@ -52,28 +52,28 @@
         margin: 20px auto;
         box-shadow: 0px 0px 3px #dadada;
 
-        @include media-breakpoint(md) {
+        @include media-breakpoint('md') {
             width: 25%;
             margin: 0;
         }
 
         &.is-active{
-            .c-functionalities__subject-text{ 
+            .c-features__subject-text{ 
                 display: flex;
             }
 
-            .c-functionalities__drop-down{
+            .c-features__drop-down{
                 display:flex;        
             }
 
-            .c-functionalities__arrow{
+            .c-features__arrow{
                 transform: rotate(0deg);
             }
 
             .o-svg__support{
                 background-image: url(../images/support-icon-blue.svg);
 
-                @include media-breakpoint(md) {
+                @include media-breakpoint('md') {
                     background-image: url(../images/support-icon-yellow.svg);
                 }
             }
@@ -81,7 +81,7 @@
             .o-svg__light-bulb {
                 background-image: url(../images/light-bulb-blue.svg);
 
-                @include media-breakpoint(md) {
+                @include media-breakpoint('md') {
                     background-image: url(../images/light-bulb-yellow.svg);
                 }
             }
@@ -90,7 +90,7 @@
                 background-image: url(../images/data-blue.svg);
 
 
-                @include media-breakpoint(md) {
+                @include media-breakpoint('md') {
                     background-image: url(../images/data-yellow.svg);
                 }
             }
@@ -103,7 +103,7 @@
         font-size: rem(21);
         line-height: 24px;
 
-        @include media-breakpoint(md) {
+        @include media-breakpoint('md') {
             font-size: rem(24);
             line-height: 32px;
         }
@@ -113,7 +113,7 @@
         font-size: rem(18);
         line-height: 26px;
 
-        @include media-breakpoint(md){
+        @include media-breakpoint('md'){
             width: 40%;
             margin: 0 auto;
             font-size: rem(20);

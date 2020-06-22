@@ -8,7 +8,7 @@ function toggleDisplay(event){
 }
 
 function init() {
-    const dropDownArrow = document.querySelectorAll('.c-functionalities__arrow');
+    const dropDownArrow = document.querySelectorAll('.c-features__arrow');
     if (dropDownArrow ) {
         dropDownArrow.forEach((el) => {
         el.addEventListener('click', toggleDisplay);
