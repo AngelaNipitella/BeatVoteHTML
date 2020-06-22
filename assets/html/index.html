@@ -13,20 +13,20 @@
 </head>
     <body>
         <header class="c-header">
-            <div class="c-header__wrapper u-mt-25">
-                <div style="width: 70px; background-color: blue; height:50px;"></div>
-                <svg 
-                    class="o-svg__burger js-menu u-mr-15"
-                    width="32" 
-                    height="24" 
+            <div class="c-header__wrapper">
+                <div class="c-header__logo"></div>
+                <svg
+                    class="o-svg o-svg__burger js-menu"
+                    width="32"
+                    height="24"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M22.8 11.2H1.2a1.2 1.2 0 110-2.4h21.6a1.2 1.2 0 110 2.4zm0-8.4H1.2a1.2 1.2 0 110-2.4h21.6a1.2 1.2 0 110 2.4zm0 16.8H1.2a1.2 1.2 0 110-2.4h21.6a1.2 1.2 0 110 2.4z" fill="#010932" fill-rule="evenodd"/>
                 </svg>
                 <nav class="c-header__nav">
-                    <svg 
-                        class="o-svg__close js-menu"
-                        width="24" 
-                        height="24" 
+                    <svg
+                        class="o-svg o-svg__close js-menu"
+                        width="24"
+                        height="24"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M13.763 11.973l9.948-9.922A1.194 1.194 0 0023.65.427a1.202 1.202 0 00-1.63-.063l-9.948 9.921L2.123.352a1.207 1.207 0 00-1.704 0 1.2 1.2 0 000 1.7l9.96 9.92-9.96 9.922a1.195 1.195 0 00.5 2.073c.439.105.9-.044 1.192-.385l9.96-9.922 9.948 9.922c.477.406 1.186.379 1.63-.063.443-.442.47-1.15.062-1.625l-9.948-9.921z" fill="#fff" fill-rule="nonzero"/>
                     </svg>
@@ -52,18 +52,20 @@
         </header>
         <!-- Inicio de Hero-->
         <section class="c-hero">
-            <div class="c-hero__bgc-oval">
-                <div class="c-hero__circle-small"></div>
-                <div class="c-hero__circle-medium"></div>
+            <div class="o-circle o-circle__bg">
+                <div class="o-circle o-circle__small"></div>
+                <div class="o-circle o-circle__medium"></div>
             </div>
             <div class="c-hero__wrapper">
-                <h2 class="c-hero__title u-mb-10 u-mb-20@sm" >Ofrece a tus lectores la información electoral más completa</h2>
-                <p class="c-hero__description u-mb-30 u-mb-60@sm">Datos en vivo, gráficos, comparativas y mucho más para tu plataforma web.</p>
-                <picture>
-                    <source media="(min-width:1024px)" srcset="../images/Macbook-1480px.png">
-                    <img class="c-hero__img u-mb-40 u-mb-70@sm" src="../images/MacBook-650px.png" alt="">
-                </picture>
-                <button class="o-btn o-btn--display u-mb-30">Solicitar Demo</button>
+                <h2 class="c-hero__title" >Ofrece a tus lectores la información electoral más completa</h2>
+                <p class="c-hero__description">Datos en vivo, gráficos, comparativas y mucho más para tu plataforma web.</p>
+                <figure class="c-hero__figure">
+                    <picture class="o-picture">
+                        <source media="(min-width:1024px)" srcset="../images/Macbook-1480px.png">
+                        <img class="c-hero__img o-image" src="../images/MacBook-650px.png" alt="">
+                    </picture>
+                </figure>
+                <button class="o-btn o-btn--display">Solicitar Demo</button>
             </div>
         </section>
         <!-- Fin de Hero-->
@@ -91,15 +93,16 @@
                     <img class="c-widget__img" src="../images/widget-3.svg" alt="">
                 </div>
                 <h3 class="c-widget__title">Alojamiento y sistemas</h3>
-                <p class="c-widget__description">Nos encargamos de alojar y servir los contenidos, con mínima implicación de sus equipos de tecnología. 
+                <p class="c-widget__description">Nos encargamos de alojar y servir los contenidos, con mínima implicación de sus equipos de tecnología.
                     Formato de trabajo SaaS. </p>
             </div>
         </section>
         <!-- Fin de Widgets-->
+        <button class="o-btn o-btn--display o-btn--hidden u-mb-60">Solicitar Demo</button>
         <!-- Inicio de Como funciona-->
         <section class="c-works u-mt-60" id="como funciona">
             <div>
-                <button class="o-btn o-btn--display o-btn--hidden u-mb-60">Solicitar Demo</button>
+
                 <h2 class="c-works__title u-mb-10">Cómo funciona</h2>
                 <p class="c-works__text ">Seguimiento al minuto del recuento electoral personalizado para tu sitio web.</p>
                 <p class="c-works__text u-mb-30 u-mb-80@md"> Nos encargamos de todo el ciclo de implementación.</p>
@@ -112,21 +115,21 @@
                 <div class="c-works__wrapper-cards">
                     <div class="c-works__wrapper-item">
                         <img class="c-works__icon" src="../images/datos-en-vivo.svg" alt="">
-                        <div>    
+                        <div>
                             <h4 class="c-works__item-title">Datos en vivo</h4>
                             <p class="c-works__item-text">Procesamos y ofrecemos datos de escrutinio en tiempo real. El diseño de las páginas, gráficos y widgets están personalizados con la imagen de tu sitio web y bajo tu dominio.</p>
                         </div>
                     </div>
                     <div class="c-works__wrapper-item">
                         <img class="c-works__icon" src="../images/seo-integrado.svg" alt="">
-                        <div>    
+                        <div>
                             <h4 class="c-works__item-title">SEO integrado</h4>
                             <p class="c-works__item-text">Utilizamos los estándares de HTML semántico, además de formato AMP en todas las páginas. Personalización de palabras clave con tu estrategia SEO.</p>
                         </div>
                     </div>
                     <div class="c-works__wrapper-item">
                         <img class="c-works__icon" src="../images/saas-ready.svg" alt="">
-                        <div>    
+                        <div>
                             <h4 class="c-works__item-title">SaaS ready</h4>
                             <p class="c-works__item-text">Nos encargamos de alojar y servir todas las páginas. Velocidad de acceso optimizada y monitorizada. Sistema desplegado en sistemas cloud de alto rendimiento.</p>
                         </div>
