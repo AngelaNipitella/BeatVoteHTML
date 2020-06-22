@@ -8,7 +8,7 @@ $breakpoints: (
     'md': $bp__md,
     'lg': $bp__lg,
     'xl': $bp__xl
-    );
+);
 
 $breakpoints-count: length($breakpoints);
 
@@ -65,5 +65,4 @@ $breakpoints-count: length($breakpoints);
     @else {
         @media (min-width: $media) { @content }
     }
-
 }
