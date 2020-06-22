@@ -22,7 +22,7 @@
         background-image: url(../images/light-bulb-red.svg);
         background-repeat: no-repeat;
 
-        @include media-breakpoint(md) {
+        @include media-breakpoint('md') {
             background-image: url(../images/light-bulb-yellow.svg);
         }
     }
@@ -41,7 +41,7 @@
         background-image: url(../images/data-red.svg);
         background-repeat: no-repeat;
 
-        @include media-breakpoint(md) {
+        @include media-breakpoint('md') {
             background-image: url(../images/data-yellow.svg);
         }
     }

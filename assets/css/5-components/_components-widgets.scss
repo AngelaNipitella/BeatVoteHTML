@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
 
-    @include media-breakpoint(md) {
+    @include media-breakpoint('md') {
         align-items: unset;
         flex-direction: row;
         width: 90%;
@@ -45,12 +45,12 @@
         font-weight: 500;
         line-height: 24px;
         
-        @include media-breakpoint(sm) {
+        @include media-breakpoint('sm') {
             width: 50%;
             margin: 0 auto;
         }
         
-        @include media-breakpoint(md) {
+        @include media-breakpoint('md') {
             width: 77%;
         }
     }
