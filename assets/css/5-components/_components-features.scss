@@ -2,11 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 64px;
-
-    @include media-breakpoint('md') {
-        margin-top: 120px;
-    }
 
     &__wrapper-title {
         width: 80%;
@@ -14,6 +9,8 @@
     }
 
     &__title {
+        margin-bottom: 10px;
+        color: $color-primary;
         font-size: rem(26);
         line-height: 32px;
 
@@ -22,7 +19,32 @@
             line-height: 42px;
         }
     }
-    
+
+    &__subject  {
+        margin-bottom: 4px;
+        color: $color-primary;
+        font-size: rem(21);
+        line-height: 24px;
+
+        @include media-breakpoint('md') {
+            font-size: rem(24);
+            line-height: 32px;
+        }
+    }
+
+    &__main-subject-text {
+        margin-bottom: 48px;
+        font-size: rem(18);
+        line-height: 26px;
+
+        @include media-breakpoint('md'){
+            width: 40%;
+            margin: 0 auto;
+            font-size: rem(20);
+            line-height: 28px;
+        }
+    }
+
     &__description {
         display: flex;
         flex-direction: column;
@@ -58,69 +80,24 @@
         }
 
         &.is-active{
-            .c-features__subject-text{ 
+            .c-features__subject-text{
                 display: flex;
             }
 
             .c-features__drop-down{
-                display:flex;        
+                display:flex;
             }
 
             .c-features__arrow{
-                transform: rotate(0deg);
-            }
-
-            .o-svg__support{
-                background-image: url(../images/support-icon-blue.svg);
-
-                @include media-breakpoint('md') {
-                    background-image: url(../images/support-icon-yellow.svg);
-                }
-            }
-
-            .o-svg__light-bulb {
-                background-image: url(../images/light-bulb-blue.svg);
-
-                @include media-breakpoint('md') {
-                    background-image: url(../images/light-bulb-yellow.svg);
-                }
-            }
-
-            .o-svg__data {
-                background-image: url(../images/data-blue.svg);
-
-
-                @include media-breakpoint('md') {
-                    background-image: url(../images/data-yellow.svg);
-                }
+                transform: rotate(180deg);
             }
         }
     }
 
-    &__subject  {
-        margin-bottom: 8px;
-        color: $color-black;
-        font-size: rem(21);
-        line-height: 24px;
-
-        @include media-breakpoint('md') {
-            font-size: rem(24);
-            line-height: 32px;
-        }
+    &__figure {
+        margin: 0 auto 24px;
     }
 
-    &__main-subject-text {
-        font-size: rem(18);
-        line-height: 26px;
-
-        @include media-breakpoint('md'){
-            width: 40%;
-            margin: 0 auto;
-            font-size: rem(20);
-            line-height: 28px;
-        }
-    }
-    
     &__subject-text  {
         display: none;
         margin-bottom: 24px;
@@ -149,11 +126,5 @@
     &__btn {
         outline: none;
         background-color: $color-white;
-    }
-
-    &__arrow{
-        width: 24px;
-        margin-top: 40px;
-        transform: rotate(180deg);
     }
 }

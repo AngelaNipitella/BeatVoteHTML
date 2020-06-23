@@ -1,5 +1,5 @@
 .c-works {
-    margin: 0 auto;
+    margin: 0 auto 65px;
     text-align: center;
 
     @include media-breakpoint('md') {
@@ -7,6 +7,7 @@
         flex-direction: column;
         width: 90%;
         max-width: 950px;
+        margin-bottom: 120px;
     }
 
     &__wrapper-text {
@@ -20,6 +21,7 @@
 
     &__title {
         margin-bottom: 10px;
+        color: $color-primary;
         font-size: rem(26);
         font-weight: $font-weight-bold;
         line-height: 32px;
@@ -86,40 +88,9 @@
         }
     }
 
-    &__icon {
-        &--live-broadcast {
-            width: 48px;
-            height: 38px;
-
-            @include media-breakpoint('md') {
-                width: 69px;
-                height: 51px;
-            }
-        }
-
-        &--seo {
-            width: 48px;
-            height: 49px;
-
-            @include media-breakpoint('md') {
-                width: 63px;
-                height: 64px;
-            }
-        }
-
-        &--sass {
-            width: 48px;
-            height: 46px;
-
-            @include media-breakpoint('md') {
-                width: 63px;
-                height: 61px;
-            }
-        }
-    }
-
     &__card-title {
         margin-bottom: 10px;
+        color: $color-primary;
         font-size: rem(21);
         font-weight: $font-weight-bold;
         line-height: 28px;

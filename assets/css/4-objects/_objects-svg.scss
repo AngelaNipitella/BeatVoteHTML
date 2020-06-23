@@ -1,9 +1,51 @@
 .o-svg {
+    &__live-broadcast {
+        width: 48px;
+        height: 38px;
+
+        @include media-breakpoint('md') {
+            width: 69px;
+            height: 51px;
+        }
+    }
+
+    &__seo {
+        width: 48px;
+        height: 49px;
+
+        @include media-breakpoint('md') {
+            width: 63px;
+            height: 64px;
+        }
+    }
+
+    &__sass {
+        width: 48px;
+        height: 46px;
+
+        @include media-breakpoint('md') {
+            width: 63px;
+            height: 61px;
+        }
+    }
+
+    &__arrow{
+        width: 24px;
+    }
+
     &__support {
         height: 60px;
         width: 68px;
-        background-image: url(../images/support-icon-yellow.svg);
-        background-repeat: no-repeat;
+    }
+
+    &__light-bulb {
+        width: 55px;
+        height: 60px;
+    }
+
+    &__data {
+        width: 61px;
+        height: 64px;
     }
 
     &__magnifying-glass {
@@ -14,34 +56,12 @@
         width: 38px;
     }
 
-    &__light-bulb {
-        width: 55px;
-        height: 60px;
-        background-image: url(../images/light-bulb-red.svg);
-        background-repeat: no-repeat;
-
-        @include media-breakpoint('md') {
-            background-image: url(../images/light-bulb-yellow.svg);
-        }
-    }
-
     &__cloud-service {
         width: 40px;
     }
 
     &__speed {
         width: 40px;
-    }
-
-    &__data {
-        width: 61px;
-        height: 64px;
-        background-image: url(../images/data-red.svg);
-        background-repeat: no-repeat;
-
-        @include media-breakpoint('md') {
-            background-image: url(../images/data-yellow.svg);
-        }
     }
 
     &__previous-event {
