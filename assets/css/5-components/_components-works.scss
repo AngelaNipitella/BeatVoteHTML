@@ -6,79 +6,33 @@
         display: flex;
         flex-direction: column;
         width: 90%;
+        max-width: 950px;
     }
 
-    &__wrapper {
-        @include media-breakpoint('md') {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            width: 90%;
-            margin: 0 auto;
-        }
-    }
-
-    &__wrapper-cards {
-        width: 100%;
-        margin-left: 0;
-
-        @include media-breakpoint('xl') {
-            transform: translateY(5%);
-        }
-    }
-
-    &__wrapper-item {
-        display: grid;
-        grid-template-columns: 2fr 7fr;
-        margin-bottom: 40px;
-        text-align: left;
-
-        @include media-breakpoint('md') { 
-            display: grid;
-            grid-template-columns: 2fr 7fr;
-            margin-bottom: 40px;
-            text-align: left;
-        }
-    }
-
-    &__img {
-        margin: 0 auto;
+    &__wrapper-text {
+        width: 90%;
+        margin: 0 auto 30px;
 
         @include media-breakpoint('md') {
-            height: 90%;
+            margin-bottom: 80px;
         }
-
-        @include media-breakpoint('xl') {
-            height: unset;
-            margin-left: 15%;
-        }
-    }
-
-    &__icon {
-        margin: 0 auto;
     }
 
     &__title {
         margin-bottom: 10px;
         font-size: rem(26);
-        font-weight: 600;
+        font-weight: $font-weight-bold;
         line-height: 32px;
 
         @include media-breakpoint('md') {
             font-size: rem(36);
-            font-weight: 700;
             line-height: 42px;
         }
     }
 
     &__text {
-        padding: 0 20px;
         font-size: rem(18);
         line-height: 26px;
-
-        @include media-breakpoint('sm') {
-            padding: 0 15%;
-        }
 
         @include media-breakpoint('md') {
             font-size: rem(20);
@@ -86,14 +40,92 @@
         }
     }
 
-    &__item-title {
-        font-size: rem(21);
+    &__wrapper {
+        @include media-breakpoint('md') {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    &__figure {
+        max-width: 200px;
+        margin: 0 auto 50px;
+
+        @include media-breakpoint('md') {
+            min-width: 300px;
+            margin: 0 70px 0 0;
+        }
+    }
+
+    &__wrapper-cards {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    &__cards {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 32px;
+        text-align: left;
+
+        &:last-of-type {
+            @include media-breakpoint('md') {
+                margin-bottom: 48px;
+            }
+        }
+    }
+
+    &__cards-figure {
+        margin-right: 16px;
+
+        @include media-breakpoint('md') {
+            margin-right: 32px;
+        }
+    }
+
+    &__icon {
+        &--live-broadcast {
+            width: 48px;
+            height: 38px;
+
+            @include media-breakpoint('md') {
+                width: 69px;
+                height: 51px;
+            }
+        }
+
+        &--seo {
+            width: 48px;
+            height: 49px;
+
+            @include media-breakpoint('md') {
+                width: 63px;
+                height: 64px;
+            }
+        }
+
+        &--sass {
+            width: 48px;
+            height: 46px;
+
+            @include media-breakpoint('md') {
+                width: 63px;
+                height: 61px;
+            }
+        }
+    }
+
+    &__card-title {
         margin-bottom: 10px;
+        font-size: rem(21);
+        font-weight: $font-weight-bold;
         line-height: 28px;
     }
 
-    &__item-text {
-        padding-right: rem(20);
+    &__card-text {
         font-size: rem(16);
         line-height: 24px;
     }

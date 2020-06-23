@@ -62,7 +62,7 @@
     &__item {
         font-size: rem(21);
         font-family: $font-family-base;
-        font-weight: 600;
+        font-weight: $font-weight-bold;
         text-decoration: none;
 
         @include media-breakpoint('md') {
@@ -78,7 +78,7 @@
             font-weight: 500;
 
             &--strong {
-                font-weight: 600;
+                font-weight: $font-weight-bold;
             }
         }
     }
