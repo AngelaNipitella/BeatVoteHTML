@@ -9,7 +9,7 @@
     font-weight: 700;
     text-transform: uppercase;
 
-    @include media-breakpoint(sm) {
+    @include media-breakpoint('sm') {
         padding: 16px 29px;
         font-size: rem(16);
     }
@@ -20,7 +20,7 @@
     }
 
     &--hidden {
-        @include media-breakpoint(md) {
+        @include media-breakpoint('md') {
             display: none;
         }
     }

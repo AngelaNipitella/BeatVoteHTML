@@ -1,6 +1,56 @@
 .o-svg {
-    &__burger {
-        width: 24px;
-        height: 20px;
+    margin: 0 auto;
+    
+    &__support {
+        height: 60px;
+        width: 68px;
+        background-image: url(../images/support-icon-yellow.svg);
+        background-repeat: no-repeat;
+    }
+
+    &__magnifying-glass {
+        width: 40px;
+    }
+    
+    &__phone-support {
+        width: 38px;
+    }
+    
+    &__light-bulb {
+        width: 55px;
+        height: 60px;
+        background-image: url(../images/light-bulb-red.svg);
+        background-repeat: no-repeat;
+
+        @include media-breakpoint('md') {
+            background-image: url(../images/light-bulb-yellow.svg);
+        }
+    }
+
+    &__cloud-service {
+        width: 40px;
+    }
+
+    &__speed {
+        width: 40px;
+    }
+
+    &__data {
+        width: 61px;
+        height: 64px;
+        background-image: url(../images/data-red.svg);
+        background-repeat: no-repeat;
+
+        @include media-breakpoint('md') {
+            background-image: url(../images/data-yellow.svg);
+        }
+    }
+
+    &__previous-event {
+        width: 40px;
+    }
+
+    &__data-tablet {
+        width: 40px;
     }
 }
