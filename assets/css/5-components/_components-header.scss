@@ -33,19 +33,15 @@
         background-color: rgba($color: #000a3a, $alpha: .92);
         text-align: center;
 
+        &.is-active {
+            display: flex;
+        }
+
         @include media-breakpoint('md') {
             position: relative;
             display: flex;
             height: auto;
             background-color: $color-transparent;
-        }
-    }
-
-    .is-active {
-        display: block;
-
-        @include media-breakpoint('md') {
-            display: flex;
         }
     }
 
