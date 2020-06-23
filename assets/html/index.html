@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../public/css/app.css">
 </head>
     <body>
@@ -35,7 +35,7 @@
                             <a href="#" class="c-header__link c-header__link--strong">Home</a>
                         </li>
                         <li class="c-header__item u-mb-30 u-mb-0@md">
-                            <a href="#como funciona" class="c-header__link">Cómo Funciona</a>
+                            <a href="#works" class="c-header__link">Cómo Funciona</a>
                         </li>
                         <li class="c-header__item u-mb-30 u-mb-0@md">
                             <a href="#" class="c-header__link">Funcionalidades</a>
@@ -59,7 +59,7 @@
             <div class="c-hero__wrapper">
                 <h2 class="c-hero__title" >Ofrece a tus lectores la información electoral más completa</h2>
                 <p class="c-hero__description">Datos en vivo, gráficos, comparativas y mucho más para tu plataforma web.</p>
-                <figure class="c-hero__figure">
+                <figure class="c-hero__figure o-figure">
                     <picture class="o-picture">
                         <source media="(min-width:1024px)" srcset="../images/Macbook-1480px.png">
                         <img class="c-hero__img o-image" src="../images/MacBook-650px.png" alt="">
@@ -99,46 +99,53 @@
         </section>
         <!-- Fin de Widgets-->
         <button class="o-btn o-btn--display o-btn--hidden u-mb-60">Solicitar Demo</button>
-        <!-- Inicio de Como funciona-->
-        <section class="c-works u-mt-60" id="como funciona">
-            <div>
-
-                <h2 class="c-works__title u-mb-10">Cómo funciona</h2>
-                <p class="c-works__text ">Seguimiento al minuto del recuento electoral personalizado para tu sitio web.</p>
-                <p class="c-works__text u-mb-30 u-mb-80@md"> Nos encargamos de todo el ciclo de implementación.</p>
+        <!-- Inicio de como funciona-->
+        <section class="c-works" id="works">
+            <div class="c-works__wrapper-text">
+                <h2 class="c-works__title">Cómo funciona</h2>
+                <p class="c-works__text">Seguimiento al minuto del recuento electoral personalizado para tu sitio web.</p>
+                <p class="c-works__text"> Nos encargamos de todo el ciclo de implementación.</p>
             </div>
             <div class="c-works__wrapper">
-                <picture>
-                    <source media="(min-width:1024px)" srcset="../images/Phone_X_front-1024.svg">
-                    <img class="c-works__img u-mb-50 u-mb-0@md" src="../images/Phone_X_front-375.svg" alt="">
-                </picture>
+                <figure class="c-works__figure o-figure">
+                    <picture class="o-picture">
+                        <source media="(min-width:1024px)" srcset="../images/Phone_X_front-1024.svg">
+                        <img class="o-image c-works__img" src="../images/Phone_X_front-375.svg" alt="">
+                    </picture>
+                </figure>
                 <div class="c-works__wrapper-cards">
-                    <div class="c-works__wrapper-item">
-                        <img class="c-works__icon" src="../images/datos-en-vivo.svg" alt="">
+                    <div class="c-works__cards">
+                        <figure class="c-works__cards-figure o-figure">
+                            <img class="c-works__icon c-works__icon--live-broadcast" src="../images/datos-en-vivo.svg" alt="">
+                        </figure>
                         <div>
-                            <h4 class="c-works__item-title">Datos en vivo</h4>
-                            <p class="c-works__item-text">Procesamos y ofrecemos datos de escrutinio en tiempo real. El diseño de las páginas, gráficos y widgets están personalizados con la imagen de tu sitio web y bajo tu dominio.</p>
+                            <h4 class="c-works__card-title">Datos en vivo</h4>
+                            <p class="c-works__card-text">Procesamos y ofrecemos datos de escrutinio en tiempo real. El diseño de las páginas, gráficos y widgets están personalizados con la imagen de tu sitio web y bajo tu dominio.</p>
                         </div>
                     </div>
-                    <div class="c-works__wrapper-item">
-                        <img class="c-works__icon" src="../images/seo-integrado.svg" alt="">
+                    <div class="c-works__cards">
+                        <figure class="c-works__cards-figure o-figure">
+                            <img class="c-works__icon c-works__icon--seo" src="../images/seo-integrado.svg" alt="">
+                        </figure>
                         <div>
-                            <h4 class="c-works__item-title">SEO integrado</h4>
-                            <p class="c-works__item-text">Utilizamos los estándares de HTML semántico, además de formato AMP en todas las páginas. Personalización de palabras clave con tu estrategia SEO.</p>
+                            <h4 class="c-works__card-title">SEO integrado</h4>
+                            <p class="c-works__card-text">Utilizamos los estándares de HTML semántico, además de formato AMP en todas las páginas. Personalización de palabras clave con tu estrategia SEO.</p>
                         </div>
                     </div>
-                    <div class="c-works__wrapper-item">
-                        <img class="c-works__icon" src="../images/saas-ready.svg" alt="">
+                    <div class="c-works__cards">
+                        <figure class="c-works__cards-figure o-figure">
+                            <img class="c-works__icon c-works__icon--sass" src="../images/saas-ready.svg" alt="">
+                        </figure>
                         <div>
-                            <h4 class="c-works__item-title">SaaS ready</h4>
-                            <p class="c-works__item-text">Nos encargamos de alojar y servir todas las páginas. Velocidad de acceso optimizada y monitorizada. Sistema desplegado en sistemas cloud de alto rendimiento.</p>
+                            <h4 class="c-works__card-title">SaaS ready</h4>
+                            <p class="c-works__card-text">Nos encargamos de alojar y servir todas las páginas. Velocidad de acceso optimizada y monitorizada. Sistema desplegado en sistemas cloud de alto rendimiento.</p>
                         </div>
                     </div>
-                    <button class="o-btn o-btn--display u-mb-30">Solicitar Demo</button>
+                    <button class="o-btn o-btn--display">Solicitar Demo</button>
                 </div>
             </div>
         </section>
-        <!-- Fin de Como funciona-->
+        <!-- Fin de works-->
         <!-- Inicio de Funcionalidades-->
         <section class="c-features">
             <div class="c-features__wrapper-title">
@@ -156,14 +163,14 @@
                     </div>
                     <div class="c-features__drop-down">
                         <img class="o-svg__magnifying-glass u-mr-15" src="../images/magnifying-glass-eye.svg" alt="">
-                            <div>    
+                            <div>
                                 <h4 class="c-features__sub-title">Monitorización</h4>
                                 <p class="c-features__sub-title-text">Monitorizamos activamente el evento, asegurando una latencia mínima en la publicación de datos.</p>
                             </div>
                     </div>
                     <div class="c-features__drop-down">
                         <img class="o-svg__phone-support u-mr-15" src="../images/phone-support.svg" alt="">
-                            <div>    
+                            <div>
                                 <h4 class="c-features__sub-title">Respuesta activa</h4>
                                 <p class="c-features__sub-title-text u-mb-0">Estamos en contacto permanentemente contigo o personas claves de tu organización para ofrecer soporte.</p>
                             </div>
@@ -181,14 +188,14 @@
                     </div>
                     <div class="c-features__drop-down">
                         <img class="o-svg__cloud-service u-mr-15" src="../images/cloud-service.svg" alt="">
-                            <div>    
+                            <div>
                                 <h4 class="c-features__sub-title">Solución SaaS</h4>
                                 <p class="c-features__sub-title-text">Construimos y mantenemos la infraestructura necesaria para soportar tu tráfico, sea el que sea. La escalabilidad de los entornos cloud a tu servicio.</p>
                             </div>
                     </div>
                     <div class="c-features__drop-down">
                         <img class="o-svg__speed u-mr-15" src="../images/speed.svg" alt="">
-                            <div>    
+                            <div>
                                 <h4 class="c-features__sub-title">Diseñado para volar</h4>
                                 <p class="c-features__sub-title-text u-mb-0">Desde la rapidez en la publicación de datos en el momento que están disponibles hasta el tiempo de respuesta de las páginas. Todo está pensado con la velocidad en mente.</p>
                             </div>
@@ -202,19 +209,19 @@
                     <div class="c-features__description">
                         <img class="o-svg__data u-mb-25" src="" alt="">
                         <h3 class="c-features__subject">Datos con significado</h3>
-                        <p class="c-features__subject-text">Publicamos datos, gráficas, comparativas y análisis. 
+                        <p class="c-features__subject-text">Publicamos datos, gráficas, comparativas y análisis.
                             Gracias a los widgets, es posible integrarlo en sus páginas, dando contexto y respaldando tu contenido.</p>
                     </div>
                     <div class="c-features__drop-down">
                         <img class="o-svg__previous-event u-mr-15" src="../images/previous-event.svg" alt="">
-                            <div>    
+                            <div>
                                 <h4 class="c-features__sub-title">Comparativas históricas</h4>
                                 <p class="c-features__sub-title-text">Los datos de eventos previos están disponibles, de forma que es posible compararlos y ver la evolución de los participantes.</p>
                             </div>
                     </div>
                     <div class="c-features__drop-down">
                         <img class="o-svg__data-tablet u-mr-15" src="../images/data-tablet.svg" alt="">
-                            <div>    
+                            <div>
                                 <h4 class="c-features__sub-title">Gráficos, tablas y pactos</h4>
                                 <p class="c-features__sub-title-text u-mb-0">Posibilidad de incorporar un pactómetro y analizar posibles alianzas. Gráficos y tablas para apoyar y ofrecer una imagen visual de los datos.</p>
                             </div>
