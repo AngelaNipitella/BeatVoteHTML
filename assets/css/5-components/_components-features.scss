@@ -1,10 +1,15 @@
 .c-features {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
+    margin-bottom: 48px;
+
+    @include media-breakpoint('md') {
+        margin-bottom: 72px;
+    }
 
     &__wrapper-title {
-        width: 80%;
+        width: 90%;
         text-align: center;
     }
 
@@ -15,18 +20,20 @@
         line-height: 32px;
 
         @include media-breakpoint('md') {
+            margin-bottom: 14px;
             font-size: rem(36);
             line-height: 42px;
         }
     }
 
-    &__subject  {
+    &__subtitle {
         margin-bottom: 4px;
         color: $color-primary;
         font-size: rem(21);
         line-height: 24px;
 
         @include media-breakpoint('md') {
+            margin-bottom: 14px;
             font-size: rem(24);
             line-height: 32px;
         }
@@ -39,7 +46,7 @@
 
         @include media-breakpoint('md'){
             width: 40%;
-            margin: 0 auto;
+            margin: 0 auto 48px;
             font-size: rem(20);
             line-height: 28px;
         }
@@ -54,29 +61,32 @@
     }
 
     &__wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        width: 100%;
+        align-items: start;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 56px;
+        width: 87%;
+        margin: 0 auto;
 
         @include media-breakpoint('md') {
-            flex-direction: row;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            column-gap: 69px;
+            max-width: 1115px;
         }
     }
 
     &__card {
+        position: relative;
         display: flex;
-        flex-direction: column;
         align-items: center;
-        padding: 40px 10px;
-        width: 80%;
-        height: 100%;
-        margin: 20px auto;
+        flex-direction: column;
+        padding: 40px 16px 100px;
         box-shadow: 0px 0px 3px #dadada;
 
         @include media-breakpoint('md') {
-            width: 25%;
-            margin: 0;
+            margin-bottom: 0;
         }
 
         &.is-active{
@@ -94,11 +104,35 @@
         }
     }
 
+    &__btn {
+        @include position(absolute, $right: 0, $bottom: 40px, $left: 0);
+        width: 24px;
+        height: 12px;
+        margin: auto;
+        background-color: $color-white;
+        outline: none;
+    }
+
     &__figure {
         margin: 0 auto 24px;
     }
 
-    &__subject-text  {
+    &__subject  {
+        margin-bottom: 8px;
+        color: $color-primary;
+        font-size: rem(21);
+        line-height: 28px;
+
+        @include media-breakpoint('md') {
+            font-size: rem(24);
+        }
+    }
+
+    &__drop-figure {
+        margin-right: 16px;
+    }
+
+    &__subject-text {
         display: none;
         margin-bottom: 24px;
         font-size: rem(16);
@@ -106,25 +140,29 @@
     }
 
     &__sub-title {
-        margin-bottom: 5px;
+        margin-bottom: 4px;
         font-size: rem(17);
+        font-weight: $font-weight-bold;
         line-height: 24px;
     }
 
     &__sub-title-text {
         margin-bottom: 32px;
         font-size: rem(15);
-        line-height: 24px;
+        line-height: 23px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
     }
 
     &__drop-down {
         display: none;
         align-items: flex-start;
-        margin-top: 20px;
-    }
+        margin-bottom: 24px;
 
-    &__btn {
-        outline: none;
-        background-color: $color-white;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
     }
 }
