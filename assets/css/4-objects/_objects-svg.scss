@@ -31,44 +31,66 @@
 
     &__arrow{
         width: 24px;
+        height: 12px;
     }
 
     &__support {
-        height: 60px;
         width: 68px;
+        height: 48px;
+
+        @include media-breakpoint('md') {
+            width: 89px;
+            height: 64px;
+        }
     }
 
     &__light-bulb {
-        width: 55px;
-        height: 60px;
+        width: 43px;
+        height: 48px;
+
+        @include media-breakpoint('md') {
+            width: 55px;
+            height: 64px;
+        }
     }
 
-    &__data {
-        width: 61px;
-        height: 64px;
+    &__monitor {
+        width: 41px;
+        height: 40px;
     }
 
-    &__magnifying-glass {
-        width: 40px;
+    &__phone {
+        width: 41px;
+        height: 47px;
     }
 
-    &__phone-support {
-        width: 38px;
-    }
-
-    &__cloud-service {
-        width: 40px;
+    &__cloud {
+        width: 41px;
+        height: 41px;
     }
 
     &__speed {
-        width: 40px;
+        width: 41px;
+        height: 39px;
+    }
+
+    &__data {
+        width: 39px;
+        height: 49px;
+
+        @include media-breakpoint('md') {
+            width: 50px;
+            height: 64px;
+        }
     }
 
     &__previous-event {
-        width: 40px;
+        width: 41px;
+        height: 41px;
     }
 
     &__data-tablet {
-        width: 40px;
+        width: 41px;
+        height: 42px;
     }
 }
