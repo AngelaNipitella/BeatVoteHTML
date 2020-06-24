@@ -1,31 +1,10 @@
 <svg
-  class="o-svg o-svg__arrow"
   xmlns="http://www.w3.org/2000/svg"
-  xmlns:xlink="http://www.w3.org/1999/xlink"
-  viewBox="0 0 32 16">
+  class="o-svg o-svg__arrow"
+  fill="#F7B500"
+  viewBox="0 0 520 280">
   <defs/>
-  <defs>
-    <filter id="a" width="104.6%" height="105.5%" x="-2.3%" y="-2.8%" filterUnits="objectBoundingBox">
-      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
-      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2.5"/>
-      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
-    </filter>
-    <filter id="c">
-      <feColorMatrix in="SourceGraphic" values="0 0 0 0 0.968627 0 0 0 0 0.709804 0 0 0 0 0.000000 0 0 0 1.000000 0"/>
-    </filter>
-    <linearGradient id="d" x1="100%" x2="0%" y1="50%" y2="50%">
-      <stop offset="0%" stop-color="#EC686B" stop-opacity=".99"/>
-      <stop offset="100%" stop-color="#EB4D51"/>
-    </linearGradient>
-    <rect id="b" width="326" height="272" x="0" y="0" rx="5"/>
-  </defs>
-  <g fill="none" fill-rule="evenodd">
-    <g transform="translate(-151 -212)">
-      <use fill="#000" filter="url(#a)" xlink:href="#b"/>
-      <use fill="#FFF" xlink:href="#b"/>
-    </g>
-    <g filter="url(#c)">
-      <path fill="url(#d)" fill-rule="nonzero" d="M14.8571347 32c-.2924556 0-.5849683-.120123-.8081671-.3604306L.33475535 16.8703457c-.44634047-.4806767-.44634047-1.2599378 0-1.7406145L14.0489676.36050752c.4463405-.4806767 1.1699937-.4806767 1.6162771 0 .4462833.4806767.4463404 1.25993785 0 1.74055301L2.75914236 16 15.6652447 29.8988933c.4463404.4806767.4463404 1.2599994 0 1.7406146C15.442103 31.879877 15.1495903 32 14.8571347 32z" transform="rotate(-90 8 8)"/>
-    </g>
+  <g data-name="Capa 2">
+    <path d="M260 280a19.9 19.9 0 01-14.14-5.86l-240-240A20 20 0 0134.14 5.86L260 231.72 485.86 5.86a20 20 0 0128.28 28.28l-240 240A19.9 19.9 0 01260 280z" data-name="Capa 1"/>
   </g>
 </svg>

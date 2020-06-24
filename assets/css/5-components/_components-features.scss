@@ -62,17 +62,17 @@
 
     &__wrapper {
         align-items: start;
-        display: grid;
-        grid-template-rows: repeat(3, 1fr);
-        row-gap: 56px;
+        display: flex;
+        flex-wrap: wrap;
         width: 87%;
         margin: 0 auto;
 
         @include media-breakpoint('md') {
+            align-items: start;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: 1fr;
             column-gap: 69px;
+            margin-bottom: 0;
             max-width: 1115px;
         }
     }
@@ -82,10 +82,17 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+        width: 100%;
+        margin-bottom: 56px;
         padding: 40px 16px 100px;
         box-shadow: 0px 0px 3px #dadada;
+        cursor: pointer;
 
         @include media-breakpoint('md') {
+            margin-bottom: 0;
+        }
+
+        &:last-of-type {
             margin-bottom: 0;
         }
 
