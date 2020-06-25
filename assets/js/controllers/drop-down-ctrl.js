@@ -12,7 +12,6 @@ function toggleDisplay(event){
 function init() {
     const dropDownArrow = document.querySelectorAll('.js-dropDown');
         if (dropDownArrow ) {
-            console.table(dropDownArrow)
             dropDownArrow.forEach((el) => {
             el.addEventListener('click', toggleDisplay);
         });

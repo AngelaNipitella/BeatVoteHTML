@@ -1,0 +1,103 @@
+.c-slider {
+    width: 87%;
+    margin: 0 auto 58px;
+
+    &__title {
+        margin-bottom: 27px;
+
+        @include media-breakpoint('md') {
+            margin-bottom: 64px;
+        }
+    }
+
+    &__slider {
+        position: relative;
+        width: 100%;
+
+        @include media-breakpoint('md') {
+            width: 785px;
+            margin: 0 auto;
+        }
+    }
+
+    &__card {
+        max-width: 785px;
+        padding: 60px 44px;
+
+        @include media-breakpoint('md') {
+            width: 785px;
+            padding: 86px 119px;
+        }
+    }
+
+    &__text {
+        font-size: rem(15);
+        line-height: 23px;
+        text-align: center;
+
+        @include media-breakpoint('md') {
+            font-size: rem(20);
+            line-height: 28px;
+        }
+
+        &:after,
+        &:before {
+            position: absolute;
+            content: url(../images/quote.svg);
+            display: block;
+            width: 32px;
+            height: 20px;
+        }
+
+        &:after {
+            bottom: 24px;
+            right: 16px;
+            transform: rotate(180deg);
+
+            @include media-breakpoint('md') {
+                bottom: 40px;
+                right: 71px;
+            }
+        }
+
+        &:before {
+            top: 24px;
+            left: 16px;
+
+            @include media-breakpoint('md') {
+                top: 40px;
+                left: 71px;
+            }
+        }
+    }
+
+    &__arrow {
+        @include position(absolute, $top: 0, $bottom: 0);
+        z-index: 1;
+        width: 24px;
+        height: 12px;
+        margin: auto;
+        background-color: $color-transparent;
+
+        &--prev {
+            left: 16px;
+            transform: rotate(90deg);
+
+            @include media-breakpoint('md') {
+                left: 32px;
+            }
+        }
+
+        &--next {
+            right: 16px;
+            transform: rotate(-90deg);
+
+            @include media-breakpoint('md') {
+                right: 32px;
+            }
+        }
+    }
+
+    @include media-breakpoint('md') {
+    }
+}
