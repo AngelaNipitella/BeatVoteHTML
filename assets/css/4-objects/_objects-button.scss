@@ -9,6 +9,7 @@
     font-family: $font-family-base;
     font-weight: 700;
     text-transform: uppercase;
+    outline: none;
 
     @include media-breakpoint('sm') {
         padding: 16px 29px;

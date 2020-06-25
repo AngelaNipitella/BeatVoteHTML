@@ -1,0 +1,73 @@
+.c-clients {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "minutos radiohuesca"
+    "henneo dn"
+    "vanguardia vanguardia"
+    "razon razon"
+    "informacion informacion";
+    gap: 32px;
+    width: 65%;
+    margin: 0 auto 64px;
+
+    @include media-breakpoint('md') {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+        "minutos radiohuesca henneo dn"
+        "vanguardia razon informacion .";
+        gap: 80px;
+        max-width: 860px;
+        margin-bottom: 120px;
+    }
+
+    &__figure {
+        @include media-breakpoint('md') {
+            margin: auto;
+        }
+    }
+
+    &__minutos {
+        grid-area: minutos;
+
+        @include media-breakpoint('md') {
+            max-width: 112px;
+        }
+    }
+
+    &__radiohuesca {
+        grid-area: radiohuesca;
+
+        @include media-breakpoint('md') {
+            max-width: 112px;
+        }
+    }
+
+    &__henneo {
+        grid-area: henneo;
+
+        @include media-breakpoint('md') {
+            max-width: 160px;
+        }
+    }
+
+    &__dn {
+        grid-area: dn;
+
+        @include media-breakpoint('md') {
+            max-width: 146px;
+        }
+    }
+
+    &__vanguardia {
+        grid-area: vanguardia;
+    }
+
+    &__razon {
+        grid-area: razon;
+    }
+
+    &__informacion {
+        grid-area: informacion;
+    }
+}
