@@ -1,4 +1,12 @@
 .o-svg {
+    &__burger {
+        fill: #010932;
+
+        &--color {
+            fill: $color-white;
+        }
+    }
+
     &__live-broadcast {
         width: 48px;
         height: 38px;

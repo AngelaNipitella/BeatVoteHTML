@@ -25,4 +25,9 @@
             display: none;
         }
     }
+
+    &--color {
+        background-image: linear-gradient($color-white, #d3d3d3);
+        color: #001fb6;
+    }
 }

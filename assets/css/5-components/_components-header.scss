@@ -11,8 +11,19 @@
         margin-bottom: 100px;
     }
 
+    &--results {
+        position: relative;
+        top: 0;
+        background-image: linear-gradient(#001FB6, #0026E1);
+
+        @include media-breakpoint('md') {
+            padding: 60px;
+        }
+    }
+
     &__wrapper {
         display: flex;
+        align-items: center;
         justify-content: space-between;
         width: 100%;
         padding: 24px 16px;
@@ -28,6 +39,7 @@
         @include position(fixed, $top: 0, $left: 0);
         z-index: 2;
         display: none;
+        max-width: 810px;
         width: 100%;
         height: 100vh;
         background-color: rgba($color: #000a3a, $alpha: .92);
@@ -60,12 +72,14 @@
     }
 
     &__item {
+        margin-bottom: 30px;
         font-size: rem(21);
         font-family: $font-family-base;
         font-weight: $font-weight-bold;
         text-decoration: none;
 
         @include media-breakpoint('md') {
+            margin-bottom: 0px;
             font-size: rem(18);
         }
     }
@@ -80,6 +94,10 @@
             &--strong {
                 font-weight: $font-weight-bold;
             }
+        }
+
+        &--color {
+            color: $color-white;
         }
     }
 
