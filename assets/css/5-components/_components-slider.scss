@@ -2,6 +2,10 @@
     width: 87%;
     margin: 0 auto 58px;
 
+    @include media-breakpoint('md') {
+        margin-bottom: 67px;
+    }
+
     &__title {
         margin-bottom: 27px;
 
@@ -13,6 +17,8 @@
     &__slider {
         position: relative;
         width: 100%;
+        box-shadow: 0px 0px 3px #dadada;
+        border-radius: 3px;
 
         @include media-breakpoint('md') {
             width: 785px;
@@ -21,6 +27,7 @@
     }
 
     &__card {
+        position: relative;
         max-width: 785px;
         padding: 60px 44px;
 
@@ -78,6 +85,8 @@
         height: 12px;
         margin: auto;
         background-color: $color-transparent;
+        cursor: pointer;
+        outline: none;
 
         &--prev {
             left: 16px;
@@ -94,6 +103,14 @@
 
             @include media-breakpoint('md') {
                 right: 32px;
+            }
+        }
+
+        &[disabled] {
+            cursor: inherit;
+
+            .o-svg__arrow {
+                fill: #e0e0e0;
             }
         }
     }

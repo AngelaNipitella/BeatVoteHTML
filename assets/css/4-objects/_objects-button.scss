@@ -1,4 +1,5 @@
 .o-btn {
+    cursor: pointer;
     padding: 12px 65px;
     background-image: linear-gradient($color-bgc-btn, $color-bgc-btn-secondary);
     border-radius: 3px;
@@ -8,6 +9,7 @@
     font-family: $font-family-base;
     font-weight: 700;
     text-transform: uppercase;
+    outline: none;
 
     @include media-breakpoint('sm') {
         padding: 16px 29px;

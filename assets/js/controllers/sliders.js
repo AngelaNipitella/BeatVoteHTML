@@ -1,12 +1,13 @@
 import { tns } from '../../../node_modules/tiny-slider/src/tiny-slider';
 
-function initExplorer() {
-  const slider1 = tns({
+function initSlider() {
+  const slider = tns({
     container: '.js-slider',
+    preventScrollOnTouch: 'force',
     items: 1,
     center: false,
     loop: false,
-    controls: false,
+    controls: true,
     prevButton: '.c-slider__arrow--prev',
     nextButton: '.c-slider__arrow--next',
   });
@@ -14,7 +15,7 @@ function initExplorer() {
 
 function init() {
   if (document.querySelector('.js-slider')) {
-    initExplorer();
+    initSlider();
   }
 }
 
