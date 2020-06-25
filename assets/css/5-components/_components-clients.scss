@@ -17,8 +17,9 @@
         grid-template-areas:
         "minutos radiohuesca henneo dn"
         "vanguardia razon informacion .";
-        max-width: 860px;
         gap: 80px;
+        max-width: 860px;
+        margin-bottom: 120px;
     }
 
     &__figure {
