@@ -16,7 +16,7 @@
         grid-template-areas:
         "minutos radiohuesca henneo dn"
         "vanguardia razon informacion .";
-        gap: 80px;
+        gap: 80px 40px;
         max-width: 860px;
         margin-bottom: 120px;
     }
@@ -31,7 +31,7 @@
         grid-area: minutos;
 
         @include media-breakpoint('md') {
-            max-width: 112px;
+            max-width: 50px;
         }
     }
 
@@ -39,7 +39,7 @@
         grid-area: radiohuesca;
 
         @include media-breakpoint('md') {
-            max-width: 112px;
+            max-width: 50px;
         }
     }
 
@@ -47,7 +47,7 @@
         grid-area: henneo;
 
         @include media-breakpoint('md') {
-            max-width: 160px;
+            max-width: 72px;
         }
     }
 
@@ -55,7 +55,7 @@
         grid-area: dn;
 
         @include media-breakpoint('md') {
-            max-width: 146px;
+            max-width: 65px;
         }
     }
 
