@@ -95,8 +95,8 @@ function deploy(cb) {
 }
 
 function watchSite() {
-  watch([`${pathSite}/css/**/*.scss`, `${pathBuild}/css/**/*.scss`], series(buildCSS, deploy));
-  // watch([`${pathSite}/js/**/*.js`, `${pathBuild}/js/**/*.js`], series(buildJS, deploy));
+  watch([`${pathSite}/css/**/*.scss`], series(buildCSS, deploy));
+  watch([`${pathSite}/js/**/*.js`], series(buildJS, deploy));
 }
 
 exports.deploy = series(
