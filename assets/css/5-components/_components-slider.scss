@@ -1,4 +1,5 @@
 .c-slider {
+    max-width: 785px;
     width: 87%;
     margin: 0 auto 58px;
 
@@ -28,7 +29,6 @@
 
     &__card {
         position: relative;
-        max-width: 785px;
         padding: 60px 44px;
 
         @include media-breakpoint('md') {
