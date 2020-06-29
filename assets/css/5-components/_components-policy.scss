@@ -1,0 +1,87 @@
+.c-policy {
+    width: 90%;
+    margin: 0 auto;
+
+    &__main-title {
+        margin-bottom: 40px;
+        color: $color-bgc-btn-secondary;
+        font-size: rem(24);
+        line-height: 1.125rem;
+    }
+
+    &__policy-title{
+        color: $color-primary;
+        margin-bottom: 30px;
+        font-size: rem(18);
+        line-height: 16px;
+    }
+
+    &__text{
+        margin-bottom: 30px;
+        font-size: rem(16);
+        line-height: 22px;
+    }
+
+    &__list {
+        @include position(absolute, $top: 177px, $left: 0);
+        z-index: 0;
+        width: 100%;
+        padding: 30px 5%;
+        background-color: rgba($color: #fff2be, $alpha: .8);
+        visibility: hidden;
+
+        @include media-breakpoint('md') {
+            @include position(relative, $top: 0, $left: 0);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 80%;
+            padding: 0 5% 30px;
+            background-color: transparent;
+        }
+    }
+
+    &__item {
+        position: relative;
+        max-width: 80%;
+        margin-bottom: 8px;
+
+        @include media-breakpoint('md') {
+            width: 47%;
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        color: $color-bgc-btn-secondary;
+        font-weight: $font-weight-bold;
+
+        @include media-breakpoint('md') {
+            text-decoration: underline;
+        }
+    }
+
+    &__btn {
+        background: none;
+        font-size: 18px;
+        text-decoration: underline;
+        color: $color-bgc-btn-secondary;
+        margin-bottom: 30px;
+
+        @include media-breakpoint('md') {
+            display: none;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .is-active {
+        .c-policy__list {
+            visibility: visible;
+            -webkit-transition: all 0.25s ease 0s;
+            transition: all 0.25s ease 0s;
+        }
+    }
+}
