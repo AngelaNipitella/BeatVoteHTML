@@ -10,8 +10,8 @@
     }
 
     &__policy-title{
-        color: $color-primary;
         margin-bottom: 30px;
+        color: $color-primary;
         font-size: rem(18);
         line-height: 16px;
     }
@@ -80,7 +80,6 @@
     .is-active {
         .c-policy__list {
             visibility: visible;
-            -webkit-transition: all 0.25s ease 0s;
             transition: all 0.25s ease 0s;
         }
     }
